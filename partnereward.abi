@@ -1,0 +1,135 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "addpartner",
+            "base": "",
+            "fields": [
+                {
+                    "name": "partner_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "banpartner",
+            "base": "",
+            "fields": [
+                {
+                    "name": "partner_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "claimreward",
+            "base": "",
+            "fields": [
+                {
+                    "name": "partner_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "global",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "start_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "duration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "lock_duration",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "lock_partner",
+            "base": "",
+            "fields": [
+                {
+                    "name": "partner_name",
+                    "type": "name"
+                },
+                {
+                    "name": "last_claim_time",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "is_partner",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "start",
+            "base": "",
+            "fields": [
+                {
+                    "name": "total_reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "duration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "lock_duration",
+                    "type": "uint32"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addpartner",
+            "type": "addpartner",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "banpartner",
+            "type": "banpartner",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claimreward",
+            "type": "claimreward",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "start",
+            "type": "start",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "global",
+            "type": "global",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "partners",
+            "type": "lock_partner",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
